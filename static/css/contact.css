@@ -1,0 +1,127 @@
+:root {
+  --header_color: #232f3e;
+  --bg_color: lightgray;
+  --color: white;
+  --selection_color: red;
+  --seperator: 25px;
+  --padding: 10px;
+}
+
+main {
+  background-image: url("/images/contact us.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content div {
+  background-color: var(--color);
+  margin-top: var(--seperator);
+  border-radius: 10px;
+}
+
+.content-title {
+  color: var(--header_color);
+  padding: var(--seperator);
+}
+
+.main-form {
+  width: 70%;
+  height: 70%;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  margin: auto;
+}
+
+.main-form-fname,
+.main-form-lname,
+.main-form-phone,
+.main-form-email,
+.main-form-subject,
+.main-form-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form-fname,
+.main-form-lname,
+.main-form-phone {
+  width: 50%;
+}
+
+.main-form-email,
+.main-form-subject {
+  width: 75%;
+}
+
+.main-form-message {
+  width: 100%;
+}
+
+.main-form-fname label,
+.main-form-lname label,
+.main-form-phone label,
+.main-form-email label,
+.main-form-subject label,
+.main-form-message label {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.main-form-fname input,
+.main-form-lname input,
+.main-form-phone input,
+.main-form-email input,
+.main-form-subject select,
+.main-form-message textarea {
+  border-radius: 5px;
+  border: 2px solid var(--header_color);
+  font-size: 18px;
+}
+
+.main-form-fname input,
+.main-form-lname input,
+.main-form-phone input,
+.main-form-email input,
+.main-form-subject select {
+  padding-left: var(--padding);
+  height: 30px;
+}
+
+.main-form-message textarea {
+  padding: var(--padding);
+}
+
+.main-form-submit {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.submit-button {
+  border: none;
+  border-radius: 20px;
+  background-color: var(--header_color);
+  color: var(--color);
+  font-size: 18px;
+  height: 40px;
+  width: 150px;
+}
+
+.submit-button:hover {
+  color: var(--selection_color);
+}
+
+.main-content p {
+  padding: var(--seperator);
+}
+
+textarea {
+  resize: none;
+}

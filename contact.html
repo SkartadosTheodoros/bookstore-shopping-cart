@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/bookstore tab icon.png" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/contact.css" />
+    <script src="https://kit.fontawesome.com/dddb21581a.js" crossorigin="anonymous"></script>
+    <title>myBookstore</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/index.html" class="logo">
+                <img src="/images/bookstore logo.png" alt="logo" />
+            </a>
+            <nav>
+                <ul class="navigation-bar">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="cart-button">Cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="header-content-mobile">
+            <button id="menu-button-nav"><span>&#9778;</span> Menu</i></button>
+            <a href="/index.html" class="logo">
+                <img src="/images/bookstore logo.png" alt="logo" />
+            </a>
+            <button id="cart-button-nav">Cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div id="navigation-bar-mobile" class="menu-closed">
+            <a href="javascript:void(0)" id="navigation-bar-close" class="close-navigation-bar"> &times;</a>
+            <nav>
+                <ul class="nav-mobile">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="cart-display" class="cart-closed">
+            <p class="cart-display-title">Products</p>
+            <a href="javascript:void(0)" id="cart-close" class="close-cart"> &times;</a>
+            <div class="cart-display-content"></div>
+            <div class="total-price">
+                <p class="total-price-title"> Price : </p>
+                <p class="total-price-content"><span id="price"></span> &euro;</p>
+            </div>
+            <div class="purchase">
+                <a href="#" class="purchase-btn">Purchase</a>
+            </div>
+        </div>
+
+        <div class="main-content contact_content">
+            <div>
+                <h1 class="content-title">Contact us</h1>
+            </div>
+            <div>
+                <form class="main-form">
+                    <div class="main-form-fname">
+                        <label for="fname">First name <span style="color: red">*</span></label>
+                        <input type="text" id="fname" name="fname" />
+                    </div>
+                    <div class="main-form-lname">
+                        <label for="lname">Last name <span style="color: red">*</span></label>
+                        <input type="text" id="lname" name="lname" />
+                    </div>
+                    <div class="main-form-phone">
+                        <label for="phone">Phone <span style="color: red">*</span></label>
+                        <input type="tel" id="phone" name="phone" />
+                    </div>
+                    <div class="main-form-email">
+                        <label for="email">Email <span style="color: red">*</span></label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                    <div class="main-form-subject">
+                        <label for="subject">Subject <span style="color: red">*</span></label>
+                        <select name="subject" id="subject">
+                            <option value=""></option>
+                            <option value="order cancellation">Order cancellation</option>
+                            <option value="order modification">Order modification</option>
+                            <option value="order development">Order development</option>
+                            <option value="order return">Order return</option>
+                        </select>
+                    </div>
+                    <div class="main-form-message">
+                        <label for="message">Message <span style="color: red">*</span></label>
+                        <textarea id="message" name="message" rows="10" cols="50"></textarea>
+                    </div>
+                    <div class="main-form-submit">
+                        <input class="submit-button" type="submit" value="Submit" />
+                    </div>
+                </form>
+                <p><span style="color: red">*</span> Fields marked with an asterisk (*) are required.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Create by Skartados Theodoros</p>
+            <p>Copyrights &#169 <span id="Copyright_Year"></span></p>
+        </div>
+    </footer>
+    <script src="/static/javascript/cart.js"></script>
+
+</body>
+</html>
