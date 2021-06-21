@@ -1,4 +1,4 @@
-<h1 align="center">Simple Calculator</h1>
+<h1 align="center">Bookstore e-Commerce Shopping Cart</h1>
 This project was created by me during the START School of Code: FullStack Developer Bootcamp Seminar
 <br></br> 
 
