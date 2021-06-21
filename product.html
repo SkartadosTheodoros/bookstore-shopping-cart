@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <script src="https://kit.fontawesome.com/dddb21581a.js" crossorigin="anonymous"></script>
+    <title>myBookstore</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/index.html" class="logo">
+                <img src="/images/bookstore logo.png" alt="logo" />
+            </a>
+            <nav>
+                <ul class="navigation-bar">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="cart-button">Cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="header-content-mobile">
+            <button id="menu-button-nav"><span>&#9778;</span> Menu</i></button>
+            <a href="/index.html" class="logo">
+                <img src="/images/bookstore logo.png" alt="logo" />
+            </a>
+            <button id="cart-button-nav">Cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div id="navigation-bar-mobile" class="menu-closed">
+            <a href="javascript:void(0)" id="navigation-bar-close" class="close-navigation-bar"> &times;</a>
+            <nav>
+                <ul class="nav-mobile">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="cart-display" class="cart-closed">
+            <p class="cart-display-title">Products</p>
+            <a href="javascript:void(0)" id="cart-close" class="close-cart"> &times;</a>
+            <div class="cart-display-content"></div>
+            <div class="total-price">
+                <p class="total-price-title"> Price : </p>
+                <p class="total-price-content"><span id="price"></span> &euro;</p>
+            </div>
+            <div class="purchase">
+                <a href="#" class="purchase-btn">Purchase</a>
+            </div>
+        </div>
+
+        <div class="main-content product_content">
+            <section id="book-1" class="book">
+                <div class="book-display">
+                    <div class="book-image">
+                        <img src="/images/book 1.jpg" alt="" />
+                    </div>
+                    <h1 class="book-title">The Witcher: The Last Wish</h1>
+                    <p class="book-author">by Andrezej Sapkowski</p>
+                    <div class="book-details">
+                        <table>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9786185049119</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Pages</td>
+                                <td>375</td>
+                            </tr>
+                            <tr>
+                                <td>Writing Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Year of publishing</td>
+                                <td>2013</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td style="font-weight:bold; color:red;">15.50</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <blockquote class="book-quote">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa architecto
+                        cupiditate soluta iure error aperiam illum non voluptatem excepturi! Ullam, laborum dolore? 
+                        Magnam quo fugit porro, sit quasi maxime!"
+                    </blockquote>
+                    <div class="book-add-button">
+                        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Προσθήκη στο καλάθι</button>
+                    </div>
+                </div>
+                <div class="book-description">
+                    <h2 class="description-title">Description</h2>
+                    <p class="description-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore voluptas ratione
+                        explicabo. Labore totam perspiciatis ex laudantium facere aliquam? Omnis ut quidem ad sint 
+                        perferendis officia ea eaque provident? Exercitationem insint iure quia, culpa tempore quas 
+                        non. Cupiditate consectetur porro laborum magni, impedit dignissimos ullam, placeat fugiat 
+                        vel unde aliquam magnam nulla quidem, architecto sunt laudantium nostrum sed. Animi quas 
+                        ratione velipsa nameum incidunt dolorum nulla itaque enim voluptate et cum praesentium eveniet 
+                        aliquid, laboriosam velit magnam, ab quia soluta dolorem consequatur quisquam saepe? Adipisci, 
+                        fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi molestias consequatur 
+                        aliquid nihil amet explicabo expedita tempore! Ipsam quasi dolorem nesciunt aspernatur dolore 
+                        perferendis, sit unde quibusdam quod, nulla possimus? Lorem ipsum dolorsit, amet consectetur 
+                        adipisicing elit. Quidem, quam esse nulla tempora rerum consectetur blanditiis ipsum minima. 
+                        A dicta quos inventore iure nemo soluta fuga rem aliquid laboriosam atque. Vel maiores suscipit 
+                        soluta, neque esse nonullam aspernatur nostrum nobis, asperiores sapiente perferendis necessitatibus. 
+                        Autem, rerum fuga quisquam omnis numquam nesciunt repudiandae, dicta, quia distinctio impedit 
+                        iure aliquam error? At dignissimos debitis repellat. Repellendus ut accusamus, debitis eligendi 
+                        quidem voluptates, sit deserunt nam consequatur reprehenderit nihil neque nisi iusto quaerat 
+                        molestiae eos illum quam! Quos provident omnis quidem quibusdam? Dolores earum id ipsum soluta 
+                        ratione voluptas alias exercitationem illum quo facilis error fuga odio eos tempora praesentium 
+                        quamnihil odit, repellendus commodi? Voluptatum temporibus eos earum nemo animi nostrum? Culpa
+                        laboriosam ea, recusandae consectetur in iure autem quae ullam voluptatibus illo perferendis 
+                        reprehenderit, odit vero, quam impedit explicabo quod! Doloribus voluptate inventore quas incidunt 
+                        fugit sed quaerat maiores qui?
+                    </p>
+                </div>
+            </section>
+
+            <section id="book-2" class="book">
+                <div class="book-display">
+                    <div class="book-image">
+                        <img src="/images/book 2.jpg" alt="" />
+                    </div>
+                    <h1 class="book-title">Game of Thrones: Fire and Blood</h1>
+                    <p class="book-author">by George R.R Martin</p>
+                    <div class="book-details">
+                        <table>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9780008402785</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Pages</td>
+                                <td>736</td>
+                            </tr>
+                            <tr>
+                                <td>Writing Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Year of publishing</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td style="font-weight:bold; color:red;">10.99</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <blockquote class="book-quote">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa architecto
+                        cupiditate soluta iure error aperiam illum non voluptatem excepturi! Ullam, laborum dolore? 
+                        Magnam quo fugit porro, sit quasi maxime!"
+                    </blockquote>
+                    <div class="book-add-button">
+                        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Προσθήκη στο καλάθι</button>
+                    </div>
+                </div>
+                <div class="book-description">
+                    <h2 class="description-title">Description</h2>
+                    <p class="description-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore voluptas ratione
+                        explicabo. Labore totam perspiciatis ex laudantium facere aliquam? Omnis ut quidem ad sint 
+                        perferendis officia ea eaque provident? Exercitationem insint iure quia, culpa tempore quas 
+                        non. Cupiditate consectetur porro laborum magni, impedit dignissimos ullam, placeat fugiat 
+                        vel unde aliquam magnam nulla quidem, architecto sunt laudantium nostrum sed. Animi quas 
+                        ratione velipsa nameum incidunt dolorum nulla itaque enim voluptate et cum praesentium eveniet 
+                        aliquid, laboriosam velit magnam, ab quia soluta dolorem consequatur quisquam saepe? Adipisci, 
+                        fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi molestias consequatur 
+                        aliquid nihil amet explicabo expedita tempore! Ipsam quasi dolorem nesciunt aspernatur dolore 
+                        perferendis, sit unde quibusdam quod, nulla possimus? Lorem ipsum dolorsit, amet consectetur 
+                        adipisicing elit. Quidem, quam esse nulla tempora rerum consectetur blanditiis ipsum minima. 
+                        A dicta quos inventore iure nemo soluta fuga rem aliquid laboriosam atque. Vel maiores suscipit 
+                        soluta, neque esse nonullam aspernatur nostrum nobis, asperiores sapiente perferendis necessitatibus. 
+                        Autem, rerum fuga quisquam omnis numquam nesciunt repudiandae, dicta, quia distinctio impedit 
+                        iure aliquam error? At dignissimos debitis repellat. Repellendus ut accusamus, debitis eligendi 
+                        quidem voluptates, sit deserunt nam consequatur reprehenderit nihil neque nisi iusto quaerat 
+                        molestiae eos illum quam! Quos provident omnis quidem quibusdam? Dolores earum id ipsum soluta 
+                        ratione voluptas alias exercitationem illum quo facilis error fuga odio eos tempora praesentium 
+                        quamnihil odit, repellendus commodi? Voluptatum temporibus eos earum nemo animi nostrum? Culpa
+                        laboriosam ea, recusandae consectetur in iure autem quae ullam voluptatibus illo perferendis 
+                        reprehenderit, odit vero, quam impedit explicabo quod! Doloribus voluptate inventore quas incidunt 
+                        fugit sed quaerat maiores qui?
+                    </p>
+                </div>
+            </section>
+
+            <section id="book-3" class="book">
+                <div class="book-display">
+                    <div class="book-image">
+                        <img src="/images/book 3.jpg" alt="" />
+                    </div>
+                    <h1 class="book-title">Throne of Glass</h1>
+                    <p class="book-author">by Maas Sarah J.</p>
+                    <div class="book-details">
+                        <table>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9781408832332</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Pages</td>
+                                <td>416</td>
+                            </tr>
+                            <tr>
+                                <td>Writing Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Year of publishing</td>
+                                <td>2012</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td style="font-weight:bold; color:red;">12.49</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <blockquote class="book-quote">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa architecto
+                        cupiditate soluta iure error aperiam illum non voluptatem excepturi! Ullam, laborum dolore? 
+                        Magnam quo fugit porro, sit quasi maxime!"
+                    </blockquote>
+                    <div class="book-add-button">
+                        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Προσθήκη στο καλάθι</button>
+                    </div>
+                </div>
+                <div class="book-description">
+                    <h2 class="description-title">Description</h2>
+                    <p class="description-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore voluptas ratione
+                        explicabo. Labore totam perspiciatis ex laudantium facere aliquam? Omnis ut quidem ad sint 
+                        perferendis officia ea eaque provident? Exercitationem insint iure quia, culpa tempore quas 
+                        non. Cupiditate consectetur porro laborum magni, impedit dignissimos ullam, placeat fugiat 
+                        vel unde aliquam magnam nulla quidem, architecto sunt laudantium nostrum sed. Animi quas 
+                        ratione velipsa nameum incidunt dolorum nulla itaque enim voluptate et cum praesentium eveniet 
+                        aliquid, laboriosam velit magnam, ab quia soluta dolorem consequatur quisquam saepe? Adipisci, 
+                        fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi molestias consequatur 
+                        aliquid nihil amet explicabo expedita tempore! Ipsam quasi dolorem nesciunt aspernatur dolore 
+                        perferendis, sit unde quibusdam quod, nulla possimus? Lorem ipsum dolorsit, amet consectetur 
+                        adipisicing elit. Quidem, quam esse nulla tempora rerum consectetur blanditiis ipsum minima. 
+                        A dicta quos inventore iure nemo soluta fuga rem aliquid laboriosam atque. Vel maiores suscipit 
+                        soluta, neque esse nonullam aspernatur nostrum nobis, asperiores sapiente perferendis necessitatibus. 
+                        Autem, rerum fuga quisquam omnis numquam nesciunt repudiandae, dicta, quia distinctio impedit 
+                        iure aliquam error? At dignissimos debitis repellat. Repellendus ut accusamus, debitis eligendi 
+                        quidem voluptates, sit deserunt nam consequatur reprehenderit nihil neque nisi iusto quaerat 
+                        molestiae eos illum quam! Quos provident omnis quidem quibusdam? Dolores earum id ipsum soluta 
+                        ratione voluptas alias exercitationem illum quo facilis error fuga odio eos tempora praesentium 
+                        quamnihil odit, repellendus commodi? Voluptatum temporibus eos earum nemo animi nostrum? Culpa
+                        laboriosam ea, recusandae consectetur in iure autem quae ullam voluptatibus illo perferendis 
+                        reprehenderit, odit vero, quam impedit explicabo quod! Doloribus voluptate inventore quas incidunt 
+                        fugit sed quaerat maiores qui?
+                    </p>
+                </div>
+            </section>
+
+            <section id="book-4" class="book">
+                <div class="book-display">
+                    <div class="book-image">
+                        <img src="/images/book 4.jpg" alt="" />
+                    </div>
+                    <h1 class="book-title">Metro 2033</h1>
+                    <p class="book-author">by Glukhovsky Dmitry</p>
+                    <div class="book-details">
+                        <table>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9780575086258</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Pages</td>
+                                <td>464</td>
+                            </tr>
+                            <tr>
+                                <td>Writing Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Year of publishing</td>
+                                <td>2011</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td style="font-weight:bold; color:red;">9.99</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <blockquote class="book-quote">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa architecto
+                        cupiditate soluta iure error aperiam illum non voluptatem excepturi! Ullam, laborum dolore? 
+                        Magnam quo fugit porro, sit quasi maxime!"
+                    </blockquote>
+                    <div class="book-add-button">
+                        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Προσθήκη στο καλάθι</button>
+                    </div>
+                </div>
+                <div class="book-description">
+                    <h2 class="description-title">Description</h2>
+                    <p class="description-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore voluptas ratione
+                        explicabo. Labore totam perspiciatis ex laudantium facere aliquam? Omnis ut quidem ad sint 
+                        perferendis officia ea eaque provident? Exercitationem insint iure quia, culpa tempore quas 
+                        non. Cupiditate consectetur porro laborum magni, impedit dignissimos ullam, placeat fugiat 
+                        vel unde aliquam magnam nulla quidem, architecto sunt laudantium nostrum sed. Animi quas 
+                        ratione velipsa nameum incidunt dolorum nulla itaque enim voluptate et cum praesentium eveniet 
+                        aliquid, laboriosam velit magnam, ab quia soluta dolorem consequatur quisquam saepe? Adipisci, 
+                        fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi molestias consequatur 
+                        aliquid nihil amet explicabo expedita tempore! Ipsam quasi dolorem nesciunt aspernatur dolore 
+                        perferendis, sit unde quibusdam quod, nulla possimus? Lorem ipsum dolorsit, amet consectetur 
+                        adipisicing elit. Quidem, quam esse nulla tempora rerum consectetur blanditiis ipsum minima. 
+                        A dicta quos inventore iure nemo soluta fuga rem aliquid laboriosam atque. Vel maiores suscipit 
+                        soluta, neque esse nonullam aspernatur nostrum nobis, asperiores sapiente perferendis necessitatibus. 
+                        Autem, rerum fuga quisquam omnis numquam nesciunt repudiandae, dicta, quia distinctio impedit 
+                        iure aliquam error? At dignissimos debitis repellat. Repellendus ut accusamus, debitis eligendi 
+                        quidem voluptates, sit deserunt nam consequatur reprehenderit nihil neque nisi iusto quaerat 
+                        molestiae eos illum quam! Quos provident omnis quidem quibusdam? Dolores earum id ipsum soluta 
+                        ratione voluptas alias exercitationem illum quo facilis error fuga odio eos tempora praesentium 
+                        quamnihil odit, repellendus commodi? Voluptatum temporibus eos earum nemo animi nostrum? Culpa
+                        laboriosam ea, recusandae consectetur in iure autem quae ullam voluptatibus illo perferendis 
+                        reprehenderit, odit vero, quam impedit explicabo quod! Doloribus voluptate inventore quas incidunt 
+                        fugit sed quaerat maiores qui?
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Create by Skartados Theodoros</p>
+            <p>Copyrights &#169 <span id="Copyright_Year"></span></p>
+        </div>
+    </footer>
+
+    <script src="/static/javascript/cart.js"></script>
+</body>
+</html>

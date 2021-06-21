@@ -1,0 +1,167 @@
+:root {
+  --header_color: #232f3e;
+  --bg_color: lightgray;
+  --color: white;
+  --selection_color: red;
+  --seperator: 25px;
+  --padding: 10px;
+}
+
+.product_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color);
+  border-radius: 10px;
+  margin-bottom: var(--seperator);
+}
+
+.book-display {
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image author"
+    "image details"
+    "image quote"
+    "image buy";
+  grid-template-columns: 250px auto;
+  grid-template-rows: 0.5fr 0.3fr 2fr 2.5fr 1fr;
+  padding: 30px 10px 0 10px;
+}
+
+.book-display table {
+  width: 50%;
+  text-overflow: none;
+}
+
+.book-image {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-image img {
+  max-width: 95%;
+  padding: 10px;
+}
+
+.book-title {
+  grid-area: title;
+  padding-top: var(--padding_content);
+  padding-left: var(--seperator);
+}
+
+.book-author {
+  grid-area: author;
+  padding-left: var(--seperator);
+}
+
+.book-details {
+  grid-area: details;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  padding-left: var(--seperator);
+  padding-top: var(--seperator);
+}
+
+.book-quote {
+  grid-area: quote;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  font-style: italic;
+  padding-left: var(--seperator);
+  width: 80%;
+}
+
+.book-add-button {
+  grid-area: buy;
+  padding-left: var(--seperator);
+  padding-bottom: var(--seperator);
+}
+
+.add-to-cart {
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  letter-spacing: 1px;
+  height: 30px;
+  width: 200px;
+}
+
+.add-to-cart:hover {
+  opacity: 70%;
+}
+
+.add-to-cart i {
+  padding-right: 5px;
+}
+
+.description-title {
+  font-size: 28px;
+  padding-left: 30px;
+}
+
+.description-content {
+  font-size: 18px;
+  text-align: justify;
+  padding: 10px 30px 20px 30px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 750px) {
+  .book-display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-title {
+    order: 1;
+  }
+
+  .book-author {
+    order: 2;
+  }
+  .book-image {
+    order: 3;
+  }
+
+  .book-image img {
+    height: 40vh;
+  }
+
+  .book-details {
+    display: inline-block;
+    order: 4;
+    font-size: 10px;
+  }
+
+  .book-quote {
+    order: 4;
+    font-size: 12px;
+    padding-top: var(--seperator);
+    padding-bottom: var(--seperator);
+  }
+
+  .book-add-button {
+    order: 6;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .description-content {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-content {
+    width: 800px;
+  }
+}
