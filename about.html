@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/bookstore tab icon.png" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/about.css" />
+    <script src="https://kit.fontawesome.com/dddb21581a.js" crossorigin="anonymous"></script>
+    <title>myBookstore</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/index.html" class="logo">
+                <img src="/images/bookstore logo.png" alt="logo" />
+            </a>
+            <nav>
+                <ul class="navigation-bar">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="cart-button">Cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="header-content-mobile">
+            <button id="menu-button-nav"><span>&#9778;</span> Menu</i></button>
+            <a href="/index.html" class="logo">
+                <img src="/images/bookstore logo.png" alt="logo" />
+            </a>
+            <button id="cart-button-nav">Cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div id="navigation-bar-mobile" class="menu-closed">
+            <a href="javascript:void(0)" id="navigation-bar-close" class="close-navigation-bar"> &times;</a>
+            <nav>
+                <ul class="nav-mobile">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="cart-display" class="cart-closed">
+            <p class="cart-display-title">Products</p>
+            <a href="javascript:void(0)" id="cart-close" class="close-cart"> &times;</a>
+            <div class="cart-display-content"></div>
+            <div class="total-price">
+                <p class="total-price-title"> Price : </p>
+                <p class="total-price-content"><span id="price"></span> &euro;</p>
+            </div>
+            <div class="purchase">
+                <a href="#" class="purchase-btn">Purchase</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="/images/about us 1.jpg" style="width:100%" alt="your bookstore">
+        </div>
+
+        <section class="know-about-us">
+            <div class="main-content know-about-us-content">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non magnam itaque doloremque
+                    necessitatibus beatae soluta neque obcaecati perferendis consequatur error dicta quae ipsam, dolor
+                    et nam repudiandae nisi. Quae."</p>
+                <p>from Nick Saw </p>
+            </div>
+        </section>
+
+
+        <section class="about-us">
+            <div class="about-us-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos voluptas eum nesciunt hic
+                    illo sequi, explicabo quasi nihil asperiores ullam, blanditiis, dolorem autem consequuntur! Nulla,
+                    error. Eaque, hic optio. Numquam adipisci quis doloribus animi delectus asperiores debitis excepturi
+                    assumenda? Vitae tenetur provident ullam dolorem nisi deleniti ex quo, doloribus eius illum
+                    repudiandae rem voluptate earum, odit animi, dicta dolore! Cumque expedita corporis accusantium
+                    alias eius sequi totam, itaque commodi, temporibus perspiciatis corrupti. Placeat cupiditate
+                    accusantium labore voluptatem minima culpa illo dolorum repudiandae. consequatur repellendus
+                    sapiente nisi veniam perspiciatis nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem nulla eligendi iste maxime repellat excepturi facilis sequi consectetur accusantium veritatis
+                    molestiae distinctio quis, porro ullam, numquam adipisci voluptatibus, aliquid alias. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Qui temporibus impedit molestiae magnam veritatis saepe
+                    porro veniam ullam assumenda atque. Explicabo eaque aliquam suscipit sed aliquid quasi animi minima
+                    qui.</p>
+            </div>
+        </section>
+
+        <div class="about-us-image">
+            <img src="/images/about us 2.png" alt="">
+        </div>
+
+        <section class="about-us">
+            <div class="about-us-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos voluptas eum nesciunt hic
+                    illo sequi, explicabo quasi nihil asperiores ullam, blanditiis, dolorem autem consequuntur! Nulla,
+                    error. Eaque, hic optio. Numquam adipisci quis doloribus animi delectus asperiores debitis excepturi
+                    assumenda? Vitae tenetur provident ullam dolorem nisi deleniti ex quo, doloribus eius illum
+                    repudiandae rem voluptate earum, odit animi, dicta dolore! Cumque expedita corporis accusantium
+                    alias eius sequi totam, itaque commodi, temporibus perspiciatis corrupti. Placeat cupiditate
+                    accusantium labore voluptatem minima culpa illo dolorum repudiandae. consequatur repellendus
+                    sapiente nisi veniam perspiciatis nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem nulla eligendi iste maxime repellat excepturi facilis sequi consectetur accusantium veritatis
+                    molestiae distinctio quis, porro ullam, numquam adipisci voluptatibus, aliquid alias. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Qui temporibus impedit molestiae magnam veritatis saepe
+                    porro veniam ullam assumenda atque. Explicabo eaque aliquam suscipit sed aliquid quasi animi minima
+                    qui.</p>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="events-title">
+                <h2>Events</h2>
+            </div>
+            <div class=main-content>
+                <div class="events-content">
+                    <img class="myImages" src="/images/event 1.jpg" style="width:100%;max-width:180px">
+                    <img class="myImages" src="/images/event 2.jpg" style="width:100%;max-width:180px">
+                    <img class="myImages" src="/images/event 3.jpg" style="width:100%;max-width:180px">
+
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Create by Skartados Theodoros</p>
+            <p>Copyrights &#169 <span id="Copyright_Year"></span></p>
+        </div>
+    </footer>
+    <script src="/static/javascript/cart.js"></script>
+    <script src="/static/javascript/images.js"></script>
+</body>
+</html>
